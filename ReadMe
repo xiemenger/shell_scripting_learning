@@ -1,0 +1,17 @@
+Learning Notes
+
+Script File Basics
+- First two characters should be '#!'  ( #! is shebang)
+- Followed by path to Bash or env:
+  #! /usr/bin/env bash
+  #! /bin/bash
+- This is executed via the kernal system called execve()
+- Kernal checks for '#!' and passes the path to the original program as a command-line argument
+- Perl, Python, Execpt, awk, and Bash can use '#!'
+- The env will look for Bash in your path
+- '#!' /bin/bash  is most common usage
+
+
+Executing the Script
+- Make scripts executivable with chmod u+x
+-
